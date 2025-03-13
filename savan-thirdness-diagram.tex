@@ -1,0 +1,25 @@
+\documentclass[tikz,border=5]{standalone}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{decorations.text}
+\usetikzlibrary{trees}
+
+\begin{document}
+
+\begin{tikzpicture}
+\node {III-ness}[edge from parent fork right,grow=east, level distance=15mm, level 1/.style={sibling distance=25mm}, level 2/.style={sibling distance=10mm}, level 3/.style={sibling distance=7.5mm}]
+    child {node {2}
+        child {node {1}}
+        child {node {2}}}
+    child {node {3}
+        child {node {2}
+          child {node {1}}
+          child {node {2}}}
+        child {node {3}
+            child {node {3}
+                child {node {3}}}}
+        child {node {1}}}
+    child {node {1}};
+\end{tikzpicture}
+
+\end{document}
