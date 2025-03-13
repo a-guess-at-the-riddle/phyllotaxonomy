@@ -1,2 +1,2 @@
 # phyllotaxonomy
-Diagrammatic figures musing with phylotaxonomy.
+Diagrammatic figures musing with phyllotaxonomy.
